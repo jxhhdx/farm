@@ -62,7 +62,7 @@ A pattern, or array of patterns, which specify the files in the build the plugin
 
 Type: `String | RegExp | Array[...String|RegExp]`<br/>
 Default: `[]`<br/>
-Example: `exlude: 'tests/**/*',`<br/>
+Example: `exclude: 'tests/**/*',`<br/>
 
 A pattern, or array of patterns, which specify the files in the build the plugin should _ignore_.
 
@@ -82,7 +82,7 @@ Example: `functions: [ 'console.log', 'MyClass.Test' ],`<br/>
 
 Specifies the functions that the plugin will target and remove.
 
-_Note: specifying functions that are used at the begining of a chain, such as 'a().b().c()', will result in '(void 0).b().c()' which will generate an error at runtime._
+_Note: specifying functions that are used at the beginning of a chain, such as 'a().b().c()', will result in '(void 0).b().c()' which will generate an error at runtime._
 
 ### `labels`
 

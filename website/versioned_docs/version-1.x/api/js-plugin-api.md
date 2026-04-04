@@ -396,7 +396,7 @@ const myPlugin = () => ({
       resolvedPaths: ['^virtual:my-plugin$'],
     },
     executor: async (param, context, hookContext) => {
-      if (param.resolvedPath === 'virutal:my-plugin') {
+      if (param.resolvedPath === 'virtual:my-plugin') {
         return {
           content: 'export default "foo"',
           moduleType: 'js'

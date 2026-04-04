@@ -17,7 +17,7 @@ use farmfe_macro_plugin::farm_plugin;
 pub struct FarmPluginExample {}
 
 impl FarmPluginExample {
-  // a Rust plugin must export a new method that accepts 2 arguments for initialization�?
+  // a Rust plugin must export a new method that accepts 2 arguments for initialization�?
   fn new(config: &Config, options: String) -> Self {
     Self {}
   }
@@ -88,7 +88,7 @@ Farm provides official templates to help your create your rust plugins quickly:
 
 then follow the prompts to create your plugin.
 
-or you can create a plugin derectly by running the following command:
+or you can create a plugin directly by running the following command:
 <Tabs>
       <TabItem value="pnpm" label="pnpm">
           <CodeBlock>pnpm create farm-plugin my-farm-plugin --type rust</CodeBlock>
@@ -108,20 +108,20 @@ The plugin project structure is as follows:
 ```plaintext
 my-farm-plugin
 ├── .github
-�?  └── workflows
+�?  └── workflows
 |       ├── release.yml
 |       ├── build.yml
-�?      └── ci.yml
+�?      └── ci.yml
 ├── Cargo.toml
 |── .gitignore
 ├── npm
-�?  ├── darwin-x64
-�?  ├── linux-x64-gnu
+�?  ├── darwin-x64
+�?  ├── linux-x64-gnu
 |   ├── win32-x64-msvc
-�?  └── ...
+�?  └── ...
 ├── package.json
 ├── src
-�?  └── lib.rs
+�?  └── lib.rs
 └── rust-toolchain.toml
 ```
 Notable files and directories:
@@ -371,7 +371,7 @@ see example [github actions publish workflow](https://github.com/farm-fe/rust-pl
 
 
 ## Examples
-We will use `@farmfe/plugin-sass` as demostration to a real Rust plugin example. This plugin will support compiling `.scss` and `.sass` file in your farm project.
+We will use `@farmfe/plugin-sass` as demonstration to a real Rust plugin example. This plugin will support compiling `.scss` and `.sass` file in your farm project.
 
 ### Define Plugin
 Exports a Rust struct named `FarmPluginSass`.
