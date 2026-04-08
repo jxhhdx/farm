@@ -66,7 +66,7 @@ pub fn generate_resource_pot_map(
   resources_pots.extend(enforce_resource_pots);
 
   fill_necessary_fields_for_resource_pot(resources_pots.iter_mut().collect(), context);
-  // the neccessary fields are filled when generating dynamic entry resource pots, so we push them after calling fill_necessary_fields_for_resource_pot
+  // the necessary fields are filled when generating dynamic entry resource pots, so we push them after calling fill_necessary_fields_for_resource_pot
   resources_pots.extend(dynamic_entry_resource_pots);
 
   let mut resource_pot_map = ResourcePotMap::new();
