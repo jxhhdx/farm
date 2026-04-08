@@ -407,7 +407,7 @@ impl Plugin for MyPlugin {
     param: &farmfe_core::plugin::PluginTransformHookParam,
     context: &std::sync::Arc<farmfe_core::context::CompilationContext>,
   ) -> farmfe_core::error::Result<Option<farmfe_core::plugin::PluginTransformHookResult>> {
-    // module type guard is neccessary
+    // module type guard is necessary
     if param.module_type == ModuleType::Custom(String::from("sass")) {
       // parse options
       const options = parse_options(&self.options, param.module_id);
